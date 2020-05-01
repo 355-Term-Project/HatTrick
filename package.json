@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.html"
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 8080\" \"open http://localhost:8080/build\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/355-Term-Project/HatTrick/issues"
   },
-  "homepage": "https://github.com/355-Term-Project/HatTrick#readme"
+  "homepage": "https://github.com/355-Term-Project/HatTrick#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
