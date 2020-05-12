@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php include ('db.php')?>
+// <html lang="en">
+<html>
   <head>
     <title>Hello!</title>
     <meta charset="utf-8" />
@@ -101,6 +103,20 @@
         </form>
       </div>
     </div>
+
+
+<?php
+  $sql='SELECT * FROM hattrick.appuser';
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+  $rowCount = $stmt->rowCount();
+  $details = $stmt->fetch();
+  print_r($details);
+
+
+
+
+
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
