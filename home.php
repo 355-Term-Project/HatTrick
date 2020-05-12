@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include ('db.php')?>
-// <html lang="en">
+<!-- // <html lang="en"> -->
 <html>
   <head>
     <title>Hello!</title>
