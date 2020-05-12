@@ -13,26 +13,6 @@
     <script src="/script.js" defer></script>
   </head>
 
-
-  <?php
-  $db_handle = pg_connect("host=localhost port=5432 dbname=HatTrick");
-  
-  echo "<h1>Connection Information</h1>";   
-  
-  echo "Database name: ' . pg_dbname($db_handle) . "<br>n";   
-  
-  echo "Hostname: " . pg_host($db_handle) . "<br>n";   
-  
-  echo "Options: " . pg_options($db_handle) . "<br>n";   
-  
-  echo "Port: " . pg_port($db_handle) . "<br>n";   
-  
-  echo "TTY name: " . pg_tty($db_handle) . "<br>n";   
-  
-  pg_close($db_handle);  
-  ?>
-
-
   <body>
     <h1 style="font-size:70px;text-align:center">HatTrick</h1>
     <img
