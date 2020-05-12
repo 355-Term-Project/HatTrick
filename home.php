@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
 <?php include ('db.php')?>
-<!-- // <html lang="en"> -->
-<html>
+  <html>
   <head>
     <title>Hello!</title>
     <meta charset="utf-8" />
@@ -112,6 +112,7 @@
   $rowCount = $stmt->rowCount();
   $details = $stmt->fetch();
   print_r($details);
+  ?>
 
 
 
