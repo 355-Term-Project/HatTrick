@@ -11,14 +11,14 @@ $dbport = '5432';
 # string suitable for pg_connect. Put this in your app.
 function pg_connection_string_from_database_url() {
   extract(parse_url($_ENV["DATABASE_URL"]));
-//   return " user = $user password = $password host = $local dbname = hattrick" . substr($path, 1); # <- you may want to add sslmode=require there too
+  return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
 }
 
 # Here we establish the connection. Yes, that's all.
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
 # Now let's use the connection for something silly just to prove it works:
-$query = "SELECT * FROM hattrick.appuser"; 
+$query = 'SELECT * FROM hattrick.appuser'; 
 $result = pg_query($pg_conn, $query);
 $arr = pg_fetch_all($result);
 print_r($arr);
