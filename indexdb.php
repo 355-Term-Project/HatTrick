@@ -21,7 +21,7 @@ $pg_conn = pg_connect(pg_connection_string_from_database_url());
 $query = 'SELECT * FROM hattrick.appuser'; 
 $result = pg_query($pg_conn, $query);
 $arr = pg_fetch_all($result);
-print_r($arr);
+// print_r($arr);
 
 print "<pre>\n";
 if (!pg_num_rows($result)) {
