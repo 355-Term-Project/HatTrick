@@ -45,13 +45,18 @@ header
     background-size:cover;
     background-position: center
 }
-* Bordered form */
-form {
+/* Bordered form */
+/* form {
   border: 3px solid #8A2BE2;
+} */
+
+h1{
+  font-size:70px;
+  text-align:center;
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email]{
   width: 45%;
   padding: 10px 20px;
   margin: 8px 10px;
@@ -59,6 +64,13 @@ input[type=text], input[type=password] {
   border: 2px solid #cca;
   box-sizing: border-box;
 }
+
+/* User Type DropDown Selections */
+.type-dd{
+  padding: 5px 10px;
+  margin: 4px 5px;
+  display: inline-block;
+} 
 
 /* Set a style for all buttons */
 button {
@@ -93,7 +105,7 @@ button:hover {
   text-align: center;
 }
 
-.welcome-text {
+.first {
   padding: 10px;
   text-align: center;
 }
@@ -108,12 +120,11 @@ span.psw {
   
 }
 
-.center {
+.center-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
-  
 }
 
 /*These are for centering in the middle of the screen*/
@@ -123,11 +134,13 @@ span.psw {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  text-align: center;
   
 }
 .coolsep {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .mainflex {
   flex: 40%;
@@ -143,6 +156,20 @@ span.psw {
 }
 
 /* SIGNUP PAGE */
-.signup-container{
 
+.signup-container{
+ text-align: center;
+}
+.haveACC{
+  padding: 25px;
+  text-align: center;
+  background-color: #008080;
+  background-size: 75% 50%;
+  background-position: center;
+  
+  background-color: rgb(60, 60, 70);
+  color: rgb(255,255,255);
+}
+.signup-button{
+  font-size: 15px;
 }

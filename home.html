@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <title>Main</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
 
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    <h1>HatTrick</h1>
+    <img
+      src="https://cdn.glitch.com/9bdad6e0-0d73-4119-9440-f462c0c46ad0%2FHot%20trick.jpg?v=1588529870992"
+      alt="Hat"
+      class="center-img"
+    />
+    <div class="coolsep">
+      <div class="centerlogin">
+        <form class="signup-form" action="signup.php" method="post">
+          <div class="imgcontainer"></div>
+          <div class="first">
+            
+            <b>Sign Up to Hat Trick</b>
+            <p class="P-welcome">Welcome Back! Please sign up below</p>
+            
+            <div class="container" 　text-align="center">
+              
+              <p>
+                <label for="username"><b>Username (Login ID)</b></label>
+                <input type="text" placeholder="Enter username" name="username" required />
+              </p>
 
-  <!-- import the webpage's javascript file -->
-  <script src="/script.js" defer></script>
+              <p>
+                <label for="password"><b>Password</b></label>          
+                <input type="password" placeholder="Enter Password" name="password" required />
+              </p>
 
-</head>
+              <p>
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter your first name" name="firstname" required />
+              </p>
+ 
 
-<body>
-  <h1 style="font-size:70px;text-align:center">HatTrick</h1>
-  <img src="https://cdn.glitch.com/9bdad6e0-0d73-4119-9440-f462c0c46ad0%2FHot%20trick.jpg?v=1588529870992" alt="Hat"
-    class="center" />
+              <p>
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter your last name" name="lastname" required />
+              </p>
 
-  <div class="coolsep">
-    <div class="centerlogin">
+              <p>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required />
+              </p>
 
-      <div class="imgcontainer"></div>
-      <div class="welcome-text">
-        <b>Sign Up to Hat Trick</b>
-        <p class="P-welcome">Welcome Back! Please sign up below</p>
-      </div>
+              <p>
+                <label for="usertype"><b>What kind of user are you?</b></label>          
+                <select id="usertype" name="usertype" class="type-dd">
+                  <option value="student">Student</option>
+                  <option value="professor">Professor</option>
+                </select>
+              </p>
 
-      <form class="signup-form" action="signup.php" method="post" style="border:1px solid #ccc">
-        <div class="signup-container">
+              <p><button type="submit" class="signup-button">Sign Up</button></p>
+              
+            </div>
 
-          <label for="username"><b>Username (Login ID)</b></label>
-          <input type="text" placeholder="Enter username" name="username" required />
-
-          <br>
-
-          <label for="password"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="password" required />
-
-          <br>
-
-          <label for="firstname"><b>First Name</b></label>
-          <input type="firstname" placeholder="Enter your first name" name="firstname" required />
-
-          <br>
-
-          <label for="lastname"><b>Last Name</b></label>
-          <input type="lastname" placeholder="Enter your last name" name="lastname" required />
-
-          <br>
-
-          <label for="email"><b>Email</b></label>
-          <input type="email" placeholder="Enter Email" name="email" required />
-
-          <br>
-
-          <label for="usertype"><b>What kind of user are you?</b></label>
-          <select id="usertype" name="usertype">
-            <option value="student">Student</option>
-            <option value="professor">Professor</option>
-          </select>
-
-          <br>
-
-          <div class="clearfix">
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <div class="container" style="background-color: rgb(60, 60, 70);">
+              <a href="signin.html" style="color: rgb(255,255,255)">
+                Already have an account? Sign In </a>
+            </div>
+            
           </div>
-
-        </div>
-      </form>
-
-
-
+        </form>
+      </div>
     </div>
-  </div>
-
-
-</body>
-
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
 </html>
