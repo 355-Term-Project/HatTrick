@@ -65,7 +65,9 @@
                 </select>
               </p>
 
-              <p><button type="submit" class="signup-button">Sign Up</button></p>
+              <button type="submit" class="signup-submit" name="signup-submit">
+                Sign Up
+              </button>
               
             </div>
 
@@ -78,9 +80,21 @@
         </form>
       </div>
     </div>
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+
   </body>
 </html>
+
+<?php
+$db_url = getenv("DATABASE_URL");
+echo "$db_url\n";
+
+$db = pg_connect($db_url);
+if($db) {echo "connected";} else {echo "not connected";}
+
+<!-- $selectSql = "SELECT 1";
+$result =  pg_query($db, $selectSql);
+
+while ($row = pg_fetch_row($result)) {
+    var_dump($row);
+} -->
+?>
