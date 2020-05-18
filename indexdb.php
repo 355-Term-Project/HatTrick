@@ -6,7 +6,6 @@ $dbuser = 'pdwszmyzomclfz';
 $dbpass = 'f44f127f236864f768f94650cbdc12dab5218ad3e22449219133b70be23e6aa6';
 $dbport = '5432';
 
-
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
 function pg_connection_string_from_database_url() {
@@ -27,13 +26,9 @@ print "<pre>\n";
 if (!pg_num_rows($result)) {
   print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
 } else {
-  $arr = pg_fetch_all($result);
-  print "Tables in your database:\n";
+  print "Tables in appuser:\n";
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
-
-
-
 
 
 print "\n";
