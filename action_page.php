@@ -1,5 +1,3 @@
-<?php include('action_page.php')?>
-
 <?php 
 
 session_start();
