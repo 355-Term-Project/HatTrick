@@ -62,8 +62,8 @@
               <p>
                 <label for="usertype"><b>What kind of user are you?</b></label>          
                 <select id="usertype" name="usertype" class="type-dd">
-                  <option id="usertype" value="S" name="S">Student</option>
-                  <option id="usertype" value="P" name="P">Professor</option>
+                  <option value="student">Student</option>
+                  <option value="professor">Professor</option>
                 </select>
               </p>
 

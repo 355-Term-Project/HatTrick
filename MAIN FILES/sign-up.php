@@ -42,7 +42,7 @@ function pg_connection_string_from_database_url() {
     if (count($errors) == 0) {
         //$password = md5($password);//encrypt the password before saving in the database
 
-        $query = "INSERT INTO hattrick.appuser(login, pwd, first_name, last_name, email, user_type) 
+        $query = "INSERT INTO appuser(login, pwd, first_name, last_name, email, user_type) 
                 VALUES('$username', '$password', '$firstName', '$lastName', '$email', '$usertype');";
         pg_query($pg_conn, $query);
         $_SESSION['username'] = $username;

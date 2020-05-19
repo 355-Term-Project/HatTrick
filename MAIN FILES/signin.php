@@ -22,8 +22,7 @@
     />
     <div class="coolsep">
       <div class="centerlogin">
-        <form action="action_page.php" method="post">
-        <?php include('errors.php');?>
+        <form action="sign-in.php" method="post">
           <div class="imgcontainer"></div>
           <div class="first">
             <b>Log in to Hat Trick</b>
@@ -40,7 +39,7 @@
                 <input type="password" placeholder="Enter Password" name="password" required />
               </p>
 
-              <button type="submit" name = "login_user">Sign In</button>
+              <button type="submit">Sign In</button>
             </div>
 
             <div class="container" style="background-color: rgb(60, 60, 70);">
