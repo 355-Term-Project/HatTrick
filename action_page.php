@@ -35,7 +35,7 @@ if (isset($_POST['login_user'])) {
   	if (pg_num_rows(pg_query($pg_conn, $query)) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: classroom.html');
+  	  header('location: index.php');
   	}else {
   		array_push($errors, "Wrong username/password combination");
   	}
