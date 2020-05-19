@@ -1,5 +1,4 @@
 <!-- //Place connection info in here -->
-
 <?php
 
 $dbhost = 'ec2-34-200-116-132.compute-1.amazonaws.com';
@@ -17,5 +16,4 @@ function pg_connection_string_from_database_url() {
 
 # Here we establish the connection. Yes, that's all.
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
-
 ?>
