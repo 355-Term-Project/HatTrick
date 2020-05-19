@@ -30,9 +30,17 @@ if (!pg_num_rows($result)) {
   print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
 } else {
   print "Users in the Table [appuser] :\n";
-  while ($row = pg_fetch_row($result)) { 
-      print("- $row[0]\n"); 
-    }
+  // Get an array of all author names
+  $arr = pg_fetch_all_columns($result, 1);
+
+  var_dump($arr);
+
+
+  // while ($row = pg_fetch_row($result)) { 
+  //     print("- $row[0]\n"); 
+  //   }
+
+
 }
 
 print "\n";
