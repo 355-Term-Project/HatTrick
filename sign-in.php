@@ -30,7 +30,7 @@ if (isset($_POST['login_user'])) {
 
   if (count($errors) == 0) {
   	//$password = md5($password);
-  	$query = "SELECT * FROM hattrick.appuser WHERE username='$username'AND password='$password';";
+  	$query = "SELECT * FROM hattrick.appuser WHERE login='$username'AND pwd='$password';";
   	pg_query($pg_conn, $query);
   	if (pg_num_rows(pg_query($pg_conn, $query)) == 1) {
   	  $_SESSION['username'] = $username;
