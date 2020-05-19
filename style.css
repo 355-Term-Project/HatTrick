@@ -61,15 +61,14 @@ body {
   margin: 2em;
 }
 
-header
-{
+header{
   background-image: linear-
     gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(12.jpg);
     height: 100vh;
     background-size:cover;
     background-position: center
 }
-* Bordered form */
+/* Bordered form */
 form {
   border: 3px solid #8A2BE2;
 }
@@ -157,8 +156,8 @@ button:hover {
 }
 
 .firstS{
-  padding 10px;
-  text-align: center
+  padding: 10px;
+  text-align: center;
 }
 /* The "Forgot password" text */
 span.psw {
@@ -239,7 +238,7 @@ span.psw {
 
 /*Hover over button*/
 .overlay {
-  <!position: absolute;>
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
