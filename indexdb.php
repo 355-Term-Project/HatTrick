@@ -32,15 +32,12 @@ if (!pg_num_rows($result)) {
   print "Users in the Table [appuser] :\n";
   // Get an array of all author names
   $arr = pg_fetch_all_columns($result, 1);
-
   var_dump($arr);
 
 
   // while ($row = pg_fetch_row($result)) { 
   //     print("- $row[0]\n"); 
   //   }
-
-
 }
 
 print "\n";
