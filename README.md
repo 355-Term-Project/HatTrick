@@ -14,3 +14,31 @@ FILES on Glitch -> Github:
 
 
 index.html -> home.html
+
+Student.html Files
+courses.
+gradebook
+assigned
+assigned1
+assigned2
+assigned3
+quiz
+quiz1
+quiz2
+quiz3
+
+Professor.html Files
+coursesprof
+gradebookprof
+assignedprof
+assigned1prof
+assigned2prof
+assigned3prof
+assigned4prof
+quizprof
+quiz1prof
+quiz2prof
+quiz3prof
+
+
+
