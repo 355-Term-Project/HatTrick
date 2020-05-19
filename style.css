@@ -487,13 +487,6 @@ span.psw {
 }
 
 /*These are for centering in the middle of the screen*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  text-align: center;
-}
 
 .centerlogin {
   display: block;
