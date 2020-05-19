@@ -397,7 +397,12 @@ body {
 
 header
 {
+<<<<<<< HEAD
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(12.jpg);
+=======
+  background-image: linear-
+    gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+>>>>>>> 5e45c6085b0e82e2f5a0ad57c2ab3e954b4bc9ea
     height: 100vh;
     background-size:cover;
     background-position: center
