@@ -297,19 +297,19 @@ span.psw {
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome, <strong>
+    	<p style="text-align:center;">Welcome, <strong>
     		<?php echo $_SESSION['username']; ?>
     			
     		</strong>
-    	</p>
-    	<p> <a href="index.php?logout='1'" 
+    	<br> 
+		<a href="index.php?logout='1'" 
     		   class = "lazybutton">Logout</a> </p>
     <?php endif ?>
 
 
 </div>
 
-<a href="courses.php" class = "lazybuttongreen" style="color: rgb(0,0,0)"
+<a href="courses.php" class = "lazybuttongreen" style="text-align:center;color: rgb(0,0,0)"
                 >Go To My Courses </a>
 </div>
 
