@@ -229,8 +229,8 @@ span.psw {
 
   <body>
     <h1>HatTrick</h1>
-    <p class="P-welcome">CS355 Lawrence Teitelman</p>
-    <p class="P-welcome">Internet and Web Tech</p>
+    <p class="P-welcome" style="text-align:center">CS355 Lawrence Teitelman</p>
+    <p class="P-welcome" style="text-align:center">Internet and Web Tech</p>
 
     <div>
       <!-- notification message -->
@@ -247,12 +247,12 @@ span.psw {
     
    <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-      <p>Welcome, <strong>
+      <p style="text-align:center">Welcome, <strong>
         <?php echo $_SESSION['username']; ?>
           
         </strong>
       </p>
-      <p> <a href="index.php?logout='1'" 
+      <p style="text-align:center"> <a href="index.php?logout='1'" 
            class = "lazybutton">Logout</a> </p>
     <?php endif ?>
     </div>
