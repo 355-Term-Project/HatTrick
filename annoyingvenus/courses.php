@@ -252,9 +252,7 @@ span.psw {
   </head>
   <body>
     <h1>HatTrick</h1>
-            <p class="P-welcome">CS355 Lawrence Teitelman</p>
-                <p class="P-welcome">Internet and Web Tech</p>
-
+            <p class="P-welcome" style="text-align:center">CS355 Lawrence Teitelman<br>Internet and Web Tech</p>
                 <div>
     
     <!-- notification message -->
@@ -271,12 +269,12 @@ span.psw {
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-      <p>Welcome, <strong>
+      <p style="text-align:center">Welcome, <strong>
         <?php echo $_SESSION['username']; ?>
           
         </strong>
       </p>
-      <p> <a href="index.php?logout='1'" 
+      <p style="text-align:center"> <a href="index.php?logout='1'" 
            class = "lazybutton">Logout</a> </p>
     <?php endif ?>
 
@@ -284,11 +282,11 @@ span.psw {
 </div>
 
 <div>
-  <h2 >
+  <h2 style="text-align:center" >
     Select a Course
     <!-- Three buttons in a group -->
     <form action = "classroom.php" method="get" target="_blank">
-<div class="btn-group" style="width:100%">
+<div class="btn-group" style="width:100%" style="text-align:center">
   <button style="width:25%"
   onclick="window.location.href = 'classroom.php'">CS 355</button>
   <br>
